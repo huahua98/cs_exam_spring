@@ -1,12 +1,15 @@
 3)  Consider the code for the Link, Stack and Queue classes.  Note Stack and Queue are not complete.
-
+public class stack
 ---------------------------------------------------------------
 public class Link{
   Object thing;
   Link next;
 }
 ---------------------------------------------------------------
-
+ public Stack(){}
+  
+  public Stack(Lnk newlink){
+    this.head=newlink;}
 
 ----------------------------------------------------------------
 public class Stack{
@@ -26,9 +29,13 @@ public class Stack{
     return head;}
     
   .......
-  
+ 
 --------------------------------------------------------------
-  
+  public Lnk pop(){
+      Lnk output = head;
+      this.head=this.head.getNext();
+      length=length-1;
+      return output;}
 ----------------------------------------------------------------
 public class Queue{
   Link head;
@@ -44,10 +51,19 @@ public class Queue{
     length=length+1;}
     
   .......
+  public void remove(){
+     void.output = this.head;
+    removeHead();
+    this.head=this.head.getPrev();
+    return output;}
   
+  public void peek(){
+    return this.head;}
 --------------------------------------------------------------
 
 a)  Explain what a Stack is.  Specify if it is LIFO or FIFO.
+The Stack class represents a last-in-first-out stack of objects,(LIFO)
 b)  Complete the Stack class by writing the "pop" method.
 c)  Explain what a Queue is.  Specify if it is LIFO or FIFO.
+Queues  like a line . order elements in a FIFO (first-in-first-out) manner
 d)  Complete the Queue class by writing the "peek" and "remove" methods.
