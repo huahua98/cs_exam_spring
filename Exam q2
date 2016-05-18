@@ -1,5 +1,5 @@
 2)  Consider the following interface:
-
+public static final
 -----------------------------------------------------
 public interface Greetings{
 
@@ -11,4 +11,5 @@ public interface Greetings{
 -----------------------------------------------------
 
 a)  Explain what an interface is.
+interface is objects define their interaction with the outside world through the methods that they expose.
 b)  Write a complete class for a language speaker of your choice, like ItalianSpeaker, which fully implements the interface.
